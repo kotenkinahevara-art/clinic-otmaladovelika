@@ -1,0 +1,8 @@
+@use 'helpers' as *;
+
+.container {
+  width: min(100% - 16px, 1262px);
+  margin-inline: auto;
+}
+
+

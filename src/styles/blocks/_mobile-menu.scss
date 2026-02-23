@@ -1,0 +1,133 @@
+﻿@use '../helpers' as *;
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100dvh;
+  overflow-y: auto;
+  z-index: var(--z-mobile-menu);
+
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: var(--space-25);
+  padding: #{rem(22)} var(--space-20) var(--space-25);
+  @include panel-surface;
+  box-shadow: var(--shadow-menu);
+
+  .nav-links--mobile {
+    --nav-link-gap: var(--space-14);
+    padding-block: #{rem(4)};
+    align-self: center;
+    justify-self: start;
+    width: 100%;
+  }
+
+  > nav {
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+  }
+
+  .nav-links--mobile .nav-links__link {
+    display: block;
+    padding-block: var(--space-10);
+    font-size: var(--font-size-ui);
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: auto;
+    border-top: #{rem(1)} solid var(--surface-divider);
+    padding-top: var(--space-10);
+  }
+
+  &__group {
+    padding-block: var(--space-14);
+  }
+
+  &__group + &__group {
+    border-top: #{rem(1)} solid var(--surface-divider);
+  }
+
+  &__address {
+    margin: 0;
+    color: var(--color-dark);
+    line-height: 1.4;
+  }
+
+  &__phones {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-10);
+
+    a {
+      color: var(--color-dark);
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-14);
+  }
+
+  &__social {
+    inline-size: var(--icon-size-lg);
+    block-size: var(--icon-size-lg);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+
+    img {
+      inline-size: var(--icon-size-lg);
+      block-size: var(--icon-size-lg);
+      display: block;
+      object-fit: contain;
+      transform-origin: center;
+    }
+
+    @include hover(false) {
+      img {
+        animation: btn-bg-soft var(--anim-bounce-duration) ease-out both;
+      }
+    }
+
+    &:focus-visible img {
+      animation: btn-bg-soft var(--anim-bounce-duration) ease-out both;
+    }
+  }
+
+  .btn {
+    flex: 1;
+  }
+
+  .btn.btn--secondary {
+    --btn-bg: var(--color-orange);
+    --btn-fg: var(--color-light);
+    color: var(--color-light);
+    border: 0;
+  }
+
+  .btn.btn--secondary .btn__link {
+    color: inherit;
+  }
+
+  @include tablet-above {
+    display: none;
+  }
+}
+
+
+
+
+

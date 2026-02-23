@@ -1,0 +1,37 @@
+﻿@use '../../helpers/functions' as f;
+
+.appointment-form__progress {
+  margin-bottom: var(--space-25);
+  display: grid;
+  gap: var(--space-10);
+}
+
+.appointment-form__progress-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-14);
+}
+
+.appointment-form__progress-label,
+.appointment-form__progress-value {
+  margin: 0;
+  color: var(--text-strong);
+  font-size: var(--font-size-body);
+}
+
+.appointment-form__progress-track {
+  width: 100%;
+  height: #{f.rem(8)};
+  border-radius: var(--radius-pill);
+  background: rgba(235, 94, 40, 0.2);
+  overflow: hidden;
+}
+
+.appointment-form__progress-fill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--color-orange);
+  transition: width var(--transition-medium) ease;
+}

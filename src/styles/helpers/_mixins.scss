@@ -1,0 +1,26 @@
+@use 'sass:math';
+@use 'functions' as *;
+
+@mixin fluid-text($max: 48, $min: 16) {
+  font-size: fluid($max, $min);
+}
+
+@mixin glass-surface {
+  background:
+    radial-gradient(circle at 20% 15%, var(--surface-glass-accent), transparent 42%),
+    var(--surface-glass-bg);
+  backdrop-filter: blur(var(--surface-glass-blur));
+}
+
+@mixin panel-surface {
+  background: linear-gradient(180deg, var(--surface-panel-from) 0%, var(--surface-panel-to) 100%);
+}
+
+@mixin modal-window-surface {
+  @include panel-surface;
+}
+
+
+
+
+

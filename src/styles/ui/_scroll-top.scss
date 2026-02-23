@@ -1,0 +1,46 @@
+@use '../helpers/functions' as f;
+@use '../helpers/media' as media;
+
+.scroll-top {
+  position: fixed;
+  right: var(--space-20);
+  bottom: var(--space-20);
+  width: #{f.rem(52)};
+  height: #{f.rem(52)};
+  border: 0;
+  border-radius: 50%;
+  background: rgba(250, 244, 243, 0.58);
+  color: var(--color-dark);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 #{f.rem(10)} #{f.rem(24)} rgba(37, 36, 34, 0.24);
+  z-index: var(--z-burger);
+  opacity: 0;
+  transform: translateY(#{f.rem(10)});
+  pointer-events: none;
+  transition:
+    opacity var(--transition-medium) ease,
+    transform var(--transition-medium) ease,
+    background var(--transition-medium) ease;
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  @include media.hover(false) {
+    background: rgba(250, 244, 243, 0.75);
+  }
+}
+
+.scroll-top__icon {
+  width: #{f.rem(12)};
+  height: #{f.rem(12)};
+  border-top: var(--line-thick) solid currentColor;
+  border-right: var(--line-thick) solid currentColor;
+  transform: translateY(#{f.rem(2)}) rotate(-45deg);
+}

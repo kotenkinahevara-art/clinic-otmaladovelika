@@ -1,0 +1,9 @@
+﻿export const navLinks = [
+  { label: 'Главная', href: '/' },
+  { label: 'О клинике', href: '/o-klinike' },
+  { label: 'Услуги', href: '/uslugi' },
+  { label: 'Отзывы', href: '/otzyvy' },
+  { label: 'Статьи', href: '/stati' },
+  { label: 'Запись на приём', href: '/zapis' },
+  { label: 'Контакты', href: '/kontakty' },
+]

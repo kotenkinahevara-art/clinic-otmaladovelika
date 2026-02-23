@@ -1,0 +1,41 @@
+﻿@use 'fonts';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+@use 'normalize';
+
+@use 'blocks/header/header';
+@use 'blocks/header/header-top';
+@use 'blocks/header/header-nav';
+@use './blocks/mobile-menu';
+@use './blocks/hero';
+@use './blocks/about';
+@use './blocks/reviews';
+@use './blocks/articles';
+@use 'blocks/appoitmnet/appointment';
+@use 'blocks/appoitmnet/faq';
+@use 'blocks/appoitmnet/widget';
+@use 'blocks/appoitmnet/form';
+@use 'blocks/appoitmnet/progress';
+@use 'blocks/contacts/contacts';
+@use 'blocks/contacts/cards';
+@use 'blocks/contacts/map';
+@use './blocks/footer';
+@use 'blocks/header/burger-button';
+@use 'ui/decorated-block';
+@use 'ui/button';
+@use 'ui/card';
+@use 'ui/paw-pattern';
+@use 'ui/card-expandable';
+@use 'ui/widgets';
+@use 'ui/scroll-top';
+@use 'ui/skeleton';
+@use 'ui/data-state';
+@use 'ui/modals';
+
+
+
+
+
+
+

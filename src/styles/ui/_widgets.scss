@@ -1,0 +1,88 @@
+.widget {
+  padding: var(--space-fluid-35-25);
+  border-radius: var(--radius-md);
+  border: var(--line-thin) solid rgba(250, 244, 243, 0.36);
+  background: rgba(250, 244, 243, 0.18);
+  color: var(--color-light);
+  display: grid;
+  gap: var(--space-10);
+}
+
+.widget__skeleton {
+  display: grid;
+  gap: var(--space-10);
+  min-height: 7rem;
+}
+
+.widget__label,
+.widget__line,
+.widget__hint,
+.widget__place,
+.widget__temp,
+.widget__condition,
+.widget__advice,
+.widget__status {
+  margin: 0;
+}
+
+.widget__label {
+  font-size: var(--font-size-ui);
+  font-family: var(--font-family-accent);
+  font-weight: 500;
+}
+
+.widget__hours {
+  display: grid;
+  gap: var(--space-10);
+  padding-top: var(--space-10);
+  border-top: var(--line-thin) solid rgba(250, 244, 243, 0.32);
+}
+
+.widget__line,
+.widget__hint,
+.widget__advice {
+  font-size: var(--font-size-body);
+  line-height: 1.45;
+}
+
+.widget__hint,
+.widget__advice {
+  color: rgba(250, 244, 243, 0.92);
+}
+
+.widget__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-14);
+}
+
+.widget__place {
+  font-size: var(--font-size-ui);
+  font-weight: 500;
+}
+
+.widget__temp {
+  font-family: var(--font-family-accent);
+  font-size: var(--font-size-title);
+  line-height: 1;
+}
+
+.widget__condition {
+  font-size: var(--font-size-ui);
+}
+
+.widget__status {
+  font-size: var(--font-size-body);
+  color: rgba(250, 244, 243, 0.82);
+}
+
+.widget--weather .widget__label {
+  font-size: var(--font-size-body);
+  color: rgba(250, 244, 243, 0.85);
+}
+
+.widget--weather .widget__head {
+  padding-bottom: var(--space-10);
+  border-bottom: var(--line-thin) solid rgba(250, 244, 243, 0.32);
+}

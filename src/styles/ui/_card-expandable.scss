@@ -1,0 +1,108 @@
+﻿@use '../helpers' as *;
+@use '../helpers/overlay-variants' as overlays;
+
+.card-expandable {
+  padding: 0;
+  gap: 0;
+  overflow: hidden;
+}
+
+.card-expandable__heading {
+  margin: 0;
+}
+
+.card-expandable__toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: #{rem(14)};
+  cursor: pointer;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  padding: fluid(40, 30) var(--space-fluid-35-25);
+}
+
+.card-expandable__icon {
+  width: fluid(34, 24);
+  height: auto;
+  flex-shrink: 0;
+  display: block;
+  margin-left: auto;
+  align-self: center;
+  order: 2;
+  transition: transform var(--transition-duration);
+}
+
+.card-expandable.is-open .card-expandable__icon {
+  transform: rotate(180deg);
+}
+
+.card-expandable .card__title {
+  font-size: var(--font-size-title);
+  line-height: 1.2;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  order: 1;
+}
+
+.appointment-intro__faq .card-expandable .card__title {
+  font-size: var(--font-size-ui);
+  line-height: 1.3;
+}
+
+.card-expandable__content-wrap {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.28s ease, opacity 0.2s ease;
+}
+
+.card-expandable.is-open .card-expandable__content-wrap {
+  max-height: rem(420);
+  opacity: 1;
+}
+
+.card-expandable__content {
+  display: grid;
+  gap: #{rem(20)};
+  background-color: overlays.overlay-color(services, orange);
+  padding: var(--space-fluid-24-18) var(--space-fluid-35-25) fluid(30, 20);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.card-expandable__details {
+  line-height: 1.35;
+  margin: 0;
+}
+
+.card-expandable__content .btn {
+  --btn-bg: var(--color-light);
+  --btn-fg: var(--color-dark);
+  color: var(--color-dark);
+  width: 100%;
+}
+
+.card-expandable__content .btn .btn__link {
+  color: inherit;
+}
+
+.card-expandable.card--light {
+  border: var(--line-thin) solid var(--surface-divider);
+}
+
+.card-expandable.card--light .card-expandable__content {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+@include tablet-above {
+  .card-expandable__content .btn {
+    width: auto;
+    justify-self: end;
+  }
+}
+
+@include overlays.by-card-variant('.card-expandable__content', services);

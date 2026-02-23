@@ -1,0 +1,36 @@
+@use 'sass:map';
+
+$overlay-palettes: (
+  services: (
+    orange: rgba(167, 0, 0, 0.26),
+    purple: rgba(24, 0, 96, 0.26),
+    green: rgba(4, 25, 7, 0.14),
+  ),
+  reviews: (
+    orange: rgba(167, 0, 0, 0.26),
+    purple: rgba(24, 0, 96, 0.26),
+    green: rgba(13, 85, 24, 0.38),
+  ),
+);
+
+@function overlay-color($palette, $variant) {
+  $palette-map: map.get($overlay-palettes, $palette);
+  @return map.get($palette-map, $variant);
+}
+
+@mixin by-card-variant($target, $palette, $property: background) {
+  .card--orange #{$target} {
+    #{$property}: overlay-color($palette, orange);
+  }
+
+  .card--purple #{$target} {
+    #{$property}: overlay-color($palette, purple);
+  }
+
+  .card--green #{$target} {
+    #{$property}: overlay-color($palette, green);
+  }
+}
+
+
+

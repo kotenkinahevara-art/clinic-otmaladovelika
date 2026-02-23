@@ -1,0 +1,67 @@
+@use '../../helpers/index' as *;
+
+.burger {
+  background: rgba(250, 244, 243, 0.58);
+  backdrop-filter: blur(10px);
+  border: 0;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: #{rem(52)};
+  block-size: #{rem(52)};
+  padding: 0;
+  cursor: pointer;
+  box-shadow: 0 #{rem(10)} #{rem(24)} rgba(37, 36, 34, 0.24);
+
+  &__icon {
+    inline-size: var(--space-20);
+    block-size: #{rem(16)};
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: #{rem(5)};
+  }
+
+  &__line {
+    inline-size: 100%;
+    block-size: var(--line-thick);
+    border-radius: var(--radius-pill);
+    background: var(--color-dark);
+    transform-origin: center;
+    transition: transform var(--transition-medium) ease, opacity var(--transition-fast) ease;
+  }
+
+  &.is-open {
+    background-color: var(--color-orange);
+
+    .burger__line {
+      background: var(--color-light);
+    }
+
+    .burger__line--1 {
+      transform: translateY(#{rem(7)}) rotate(45deg);
+    }
+
+    .burger__line--2 {
+      opacity: 0;
+    }
+
+    .burger__line--3 {
+      transform: translateY(#{rem(-7)}) rotate(-45deg);
+    }
+  }
+}
+
+@include tablet {
+  .burger {
+    position: fixed;
+    top: var(--space-10);
+    right: var(--space-20);
+    z-index: var(--z-burger);
+  }
+}
+
+
+
+

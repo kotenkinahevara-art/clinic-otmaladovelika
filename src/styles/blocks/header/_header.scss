@@ -1,0 +1,22 @@
+@use '../../helpers/index' as *;
+
+.header {
+  position: relative;
+  background-color: var(--color-orange);
+}
+
+@include mobile {
+  .header > .container {
+    width: 100%;
+    min-height: #{rem(72)};
+    display: flex;
+    align-items: center;
+  }
+
+  .header-top {
+    width: 100%;
+  }
+}
+
+
+

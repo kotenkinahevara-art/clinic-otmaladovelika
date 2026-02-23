@@ -1,0 +1,39 @@
+@use '../helpers' as *;
+
+.card--paw-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.card--paw-bg > :not(.paw-pattern) {
+  position: relative;
+  z-index: 1;
+}
+
+.paw-pattern {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: var(--space-fluid-24-18);
+  opacity: 0.45;
+}
+
+.paw-pattern__item {
+  width: fluid(150, 92);
+  height: auto;
+  display: block;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.paw-pattern__item:first-child {
+  align-self: flex-start;
+}
+
+.paw-pattern__item:last-child {
+  align-self: flex-end;
+}

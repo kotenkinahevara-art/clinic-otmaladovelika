@@ -1,0 +1,66 @@
+@use '../helpers' as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--card-content-gap);
+  padding: var(--card-padding-block) var(--card-padding-inline);
+  border-radius: var(--border-radius);
+  --card-bg: var(--color-light);
+  --card-fg: var(--color-dark);
+
+  background: var(--card-bg);
+  color: var(--card-fg);
+}
+
+.card__title {
+  font-family: var(--font-family-accent);
+  font-size: #{rem(32)};
+  line-height: 1.2;
+}
+
+.card__text {
+  font-size: var(--font-size-body);
+  line-height: 1.2;
+}
+
+.card--orange {
+  --card-bg: var(--color-orange);
+  --card-fg: var(--color-light);
+}
+
+.card--purple {
+  --card-bg: var(--color-violet);
+  --card-fg: var(--color-light);
+}
+
+.card--green {
+  --card-bg: var(--color-green);
+  --card-fg: var(--color-light);
+}
+
+.card--light {
+  --card-bg: var(--color-light);
+  --card-fg: var(--color-dark);
+}
+
+.cards-grid--about {
+  display: grid;
+  gap: #{rem(12)};
+}
+
+.cards-grid--about .btn--xl {
+  width: 100%;
+}
+
+.cards-grid--services {
+  display: grid;
+  gap: #{rem(12)};
+  align-items: start;
+
+  @include mobile-above {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+

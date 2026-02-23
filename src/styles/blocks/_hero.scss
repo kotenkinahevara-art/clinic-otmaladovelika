@@ -1,0 +1,93 @@
+@use '../helpers' as *;
+
+.section--hero {
+  position: relative;
+  padding-top: fluid(150, 75);
+  padding-bottom: var(--space-fluid-55-45);
+  background-color: var(--color-orange);
+  color: var(--color-light);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+
+  > .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-30);
+    align-items: start;
+  }
+
+  &__left {
+    min-width: 0;
+  }
+
+  &__right {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-20);
+    min-width: 0;
+  }
+
+  &__title {
+    font-size: var(--font-size-display);
+    font-family: var(--font-family-accent);
+    padding-bottom: fluid(75, 45);
+    font-weight: 600;
+    line-height: 0.8;
+  }
+
+  &__decor-wrap {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+
+    .container {
+      position: relative;
+      height: 100%;
+    }
+  }
+
+  &__decor {
+    inset: 0;
+  }
+
+  &__subtitle {
+    font-size: var(--font-size-title);
+    line-height: 1.2;
+    padding-bottom: var(--space-fluid-55-45);
+  }
+
+  &__button {
+    display: flex;
+    justify-content: flex-start;
+
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+@include mobile-above {
+  .section--hero__layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.46fr);
+    gap: var(--space-30);
+    align-items: start;
+  }
+
+  .section--hero__right {
+    gap: var(--space-25);
+  }
+
+  .section--hero__button {
+    justify-content: flex-end;
+  }
+}
+
+
+
+
+

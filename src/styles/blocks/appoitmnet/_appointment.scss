@@ -1,0 +1,62 @@
+﻿@use '../../helpers/functions' as f;
+@use '../../helpers/media' as media;
+
+.section--appointment {
+  background: var(--color-orange);
+  padding-top: var(--space-75);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.section--appointment-heading {
+  padding-bottom: 0;
+}
+
+.appointment-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-25);
+  align-items: start;
+}
+
+@include media.mobile-above {
+  .appointment-layout {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: f.fluid(40, 28);
+    align-items: stretch;
+  }
+
+  .appointment-intro {
+    grid-column: 1;
+  }
+
+  .appointment-form {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .appointment-form__fields {
+    flex: 0 0 auto;
+  }
+
+  .appointment-form .btn--xl {
+    margin-top: auto;
+  }
+
+  .appointment-weather {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+
+@include media.mobile {
+  .section--appointment {
+    padding-top: var(--space-40);
+  }
+
+  .appointment-form {
+    padding: var(--space-45) var(--space-40);
+  }
+}

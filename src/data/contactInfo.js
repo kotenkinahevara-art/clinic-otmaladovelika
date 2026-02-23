@@ -1,0 +1,7 @@
+﻿export const contactInfo = {
+  address: 'р-п Дальнее Константиново, пер. Солнечный, дом 2',
+  phones: ['+7 (987) 550-77-10', '+7 (902) 686-08-76'],
+  vkUrl: 'https://vk.com/otmaladovelikavet',
+  telegramUrl: '#',
+  workHours: ['Ежедневно: с 9:00 до 18:30', 'Обед: 13:00-14:00'],
+}

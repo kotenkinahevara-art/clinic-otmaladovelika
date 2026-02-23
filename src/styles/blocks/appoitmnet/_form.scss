@@ -1,0 +1,105 @@
+﻿@use '../../helpers/functions' as f;
+
+.appointment-form {
+  background: var(--color-light);
+  border-radius: var(--border-radius);
+  padding: var(--form-panel-padding-block) var(--form-panel-padding-inline);
+}
+
+.appointment-form__fields {
+  display: grid;
+  gap: var(--form-field-gap);
+}
+
+.appointment-form__input {
+  width: 100%;
+  border: var(--line-thin) solid var(--color-orange);
+  border-radius: var(--form-control-radius);
+  background: transparent;
+  color: var(--text-muted);
+  padding: #{f.rem(16)} var(--space-18);
+  outline: 0;
+}
+
+.appointment-form__input:focus-visible {
+  outline: none;
+}
+
+.appointment-form__input::placeholder {
+  color: var(--text-muted);
+}
+
+.appointment-form__input:not(:placeholder-shown) {
+  color: var(--color-dark);
+}
+
+.appointment-form__input--textarea {
+  resize: vertical;
+  min-height: f.rem(110);
+}
+
+.appointment-form__check {
+  display: grid;
+  grid-template-columns: var(--control-size-sm) minmax(0, 1fr);
+  align-items: start;
+  gap: var(--space-14);
+}
+
+.appointment-form__check-input {
+  width: var(--control-size-sm);
+  height: var(--control-size-sm);
+  margin: 0;
+  appearance: none;
+  border: var(--line-thin) solid var(--color-orange);
+  border-radius: var(--space-10);
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.appointment-form__check-input:checked::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: var(--space-10);
+  height: var(--space-10);
+  background: var(--color-orange);
+  border-radius: #{f.rem(2)};
+  transform: translate(-50%, -50%);
+}
+
+.appointment-form__check-label {
+  color: var(--text-strong);
+  line-height: 1.4;
+}
+
+.appointment-form__policy-link {
+  border: 0;
+  background: transparent;
+  color: var(--color-dark);
+  text-decoration: underline;
+  text-underline-offset: var(--underline-offset-sm);
+  padding: 0;
+  cursor: pointer;
+}
+
+.appointment-form .btn--xl {
+  width: 100%;
+  margin-top: var(--space-fluid-24-18);
+}
+
+.appointment-form__submit-btn.is-sent {
+  --btn-bg: var(--color-violet);
+  --btn-fg: var(--color-light);
+}
+
+.appointment-form__submit-status {
+  margin: var(--space-14) 0 0;
+  color: var(--color-dark);
+  line-height: 1.35;
+}
+
+.appointment-form__submit-status[data-error='true'] {
+  color: var(--color-orange);
+}

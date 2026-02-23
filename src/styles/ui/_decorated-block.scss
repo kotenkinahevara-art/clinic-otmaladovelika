@@ -1,0 +1,49 @@
+@use '../helpers/index' as *;
+
+.decorated-block {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.decorated-block__layer {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: #{rem(20)};
+}
+
+.decorated-block__shape {
+  width: fluid(360, 170);
+  height: auto;
+}
+
+.decorated-block__shape:nth-child(1) {
+  align-self: flex-end;
+  transform: rotate(-34deg);
+}
+
+.decorated-block__shape:nth-child(2) {
+  align-self: flex-start;
+  transform: rotate(45deg);
+
+  @include mobile {
+    align-self: center;
+  }
+}
+
+.decorated-block__shape:nth-child(3) {
+  align-self: center;
+  transform: rotate(-45deg);
+
+  @include mobile {
+    display: none;
+  }
+}
+
+
+

@@ -1,0 +1,76 @@
+@use '../../helpers/functions' as f;
+@use '../../helpers/media' as media;
+
+.contacts-card {
+  display: grid;
+  gap: var(--space-20);
+}
+
+.contacts-card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-10);
+}
+
+.contacts-card__icon {
+  width: var(--icon-size-fluid);
+  height: var(--icon-size-fluid);
+  object-fit: contain;
+  display: block;
+}
+
+.contacts-card__title {
+  font-family: var(--font-family-accent);
+  font-size: var(--font-size-ui);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-dark);
+}
+
+.contacts-card__panel {
+  border: var(--line-thin) solid var(--color-orange);
+  border-radius: var(--radius-md);
+  background: transparent;
+  padding: var(--space-fluid-24-18);
+  min-height: var(--form-control-min-height);
+  display: grid;
+  align-content: center;
+}
+
+.contacts-card__text,
+.contacts-card__link {
+  margin: 0;
+  color: var(--color-dark);
+  line-height: 1.45;
+  text-decoration: none;
+}
+
+.contacts__actions {
+  margin-top: f.fluid(30, 20);
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.contacts__action-btn {
+  width: 100%;
+  max-width: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-14);
+  text-decoration: none;
+}
+
+.contacts__action-icon {
+  width: var(--icon-size-sm);
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+@include media.mobile-above {
+  .contacts__column--right .contacts__actions {
+    margin-top: auto;
+    gap: var(--space-10);
+  }
+}

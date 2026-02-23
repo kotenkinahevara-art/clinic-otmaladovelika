@@ -1,0 +1,20 @@
+﻿@use '../../helpers/functions' as f;
+
+.contacts__map {
+  margin-top: var(--space-55);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.contacts__map iframe {
+  display: block;
+  width: 100%;
+  height: f.fluid(360, 240);
+  border: 0;
+}
+
+.contacts__map-actions {
+  margin-top: var(--space-fluid-24-18);
+  display: flex;
+  justify-content: center;
+}

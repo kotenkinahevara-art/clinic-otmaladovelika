@@ -1,0 +1,28 @@
+@use '../helpers' as *;
+
+.section--about {
+
+  &__layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: #{rem(25)};
+
+    @include mobile-above {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: start;
+    }
+  }
+
+}
+
+.intro__content {
+  display: grid;
+  gap: fluid(45, 20);
+
+  @include mobile {
+    padding-bottom: #{rem(40)};
+  }
+}
+
+
+
