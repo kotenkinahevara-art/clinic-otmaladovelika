@@ -46,12 +46,6 @@ npm run build
 npm run preview
 ```
 
-## Настройка отправки формы
-
-- Endpoint формы по умолчанию: `POST /api/send-lead.php`
-- При необходимости можно переопределить endpoint через `VITE_FORM_ENDPOINT`
-- Секреты Telegram (bot token и chat id) должны храниться вне публичной директории сайта
-
 ## Лицензия
 
 `All rights reserved`  
