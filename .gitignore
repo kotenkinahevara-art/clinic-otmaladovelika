@@ -1,4 +1,32 @@
-# Logs
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# test artifacts
+playwright-report/
+test-results/
+
+# build / deps
+node_modules/
+dist/
+coverage/
+
+# env / secrets
+.env
+.env.*
+!.env.example
+secrets.*
+*.secret
+*.key
+*.pem
+
+# local run artifacts
+*.out
+*.err
+*.pid
+
 logs
 *.log
 npm-debug.log*
