@@ -11,8 +11,12 @@
 function scrollToSection(sectionId) {
   const id = sectionId.startsWith('#') ? sectionId.slice(1) : sectionId
   const target = document.getElementById(id)
+  const hash = `#${id}`
 
   if (target) {
+    if (window.location.hash !== hash) {
+      window.history.replaceState(null, '', hash)
+    }
     target.scrollIntoView({ behavior: 'smooth', block: 'start' })
     return
   }
@@ -20,7 +24,7 @@ function scrollToSection(sectionId) {
   const nextRoute = sectionRouteMap[id]
 
   if (nextRoute && window.location.pathname !== nextRoute) {
-    window.location.assign(nextRoute)
+    window.location.assign(`${nextRoute}${hash}`)
     return
   }
 

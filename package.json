@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
     "build": "vite build",
+    "validate:articles": "node scripts/validate-articles.mjs",
     "lint": "eslint .",
     "test": "npm run test:e2e",
     "test:e2e": "playwright test",

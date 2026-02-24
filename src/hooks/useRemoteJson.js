@@ -2,12 +2,20 @@ import { useCallback, useEffect, useState } from 'react'
 
 const cache = new Map()
 
-function useRemoteJson(url, fallbackData) {
+function useRemoteJson(url, fallbackData, options = {}) {
+  const { enabled = true } = options
   const [data, setData] = useState(() => cache.get(url) ?? fallbackData)
-  const [isLoading, setIsLoading] = useState(!cache.has(url))
+  const [isLoading, setIsLoading] = useState(enabled && !cache.has(url))
   const [isError, setIsError] = useState(false)
 
   const load = useCallback(async () => {
+    if (!enabled || !url) {
+      setData(fallbackData)
+      setIsLoading(false)
+      setIsError(false)
+      return
+    }
+
     try {
       setIsLoading(true)
       setIsError(false)
@@ -26,13 +34,20 @@ function useRemoteJson(url, fallbackData) {
     } finally {
       setIsLoading(false)
     }
-  }, [url, fallbackData])
+  }, [url, fallbackData, enabled])
 
   useEffect(() => {
+    if (!enabled || !url) {
+      setData(fallbackData)
+      setIsLoading(false)
+      setIsError(false)
+      return
+    }
+
     if (!cache.has(url)) {
       load()
     }
-  }, [url, load])
+  }, [url, load, fallbackData, enabled])
 
   return { data, isLoading, isError, reload: load }
 }

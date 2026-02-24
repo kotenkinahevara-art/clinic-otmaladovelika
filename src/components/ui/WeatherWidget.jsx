@@ -10,7 +10,7 @@ const classifyWeather = (temperature, weatherCode) => {
   if (temperature <= -10 || snowCodes.has(weatherCode)) {
     return {
       condition: 'Холодно',
-      advice: 'Осторожно, сильный мороз: сократите прогулку и используйте защиту лап.',
+      advice: 'Осторожно, морозно: сократите прогулку и используйте защиту лап.',
     }
   }
 
@@ -113,7 +113,7 @@ function WeatherWidget({ location = 'Дальнее Константиново' 
 
           {isError ? (
             <p className="widget__status" aria-live="polite">
-              Не удалось загрузить погоду, показываем базовую рекомендацию.
+              -
             </p>
           ) : null}
 

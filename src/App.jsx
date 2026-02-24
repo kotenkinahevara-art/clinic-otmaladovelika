@@ -7,6 +7,7 @@ import ReviewsPage from './pages/ReviewsPage.jsx'
 import ArticlesPage from './pages/ArticlesPage.jsx'
 import AppointmentPage from './pages/AppointmentPage.jsx'
 import ContactsPage from './pages/ContactsPage.jsx'
+import DalneeKonstantinovoPage from './pages/DalneeKonstantinovoPage.jsx'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/stati" element={<ArticlesPage />} />
         <Route path="/zapis" element={<AppointmentPage />} />
         <Route path="/kontakty" element={<ContactsPage />} />
+        <Route path="/vetklinika-v-dalnem-konstantinove" element={<DalneeKonstantinovoPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </SiteLayout>

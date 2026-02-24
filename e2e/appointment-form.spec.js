@@ -11,14 +11,14 @@ test.describe('Appointment form', () => {
     const noCallCheckbox = page.locator('#appointment-no-call')
     const telegramInput = page.locator('#appointment-telegram')
     const policyCheckbox = page.locator('.appointment-form__check-input').nth(1)
-    const submitButton = page.getByRole('button', { name: 'Отправить заявку' })
+    const submitButton = page.locator('.appointment-form button[type="submit"]')
 
-    await nameInput.fill('Анна')
+    await nameInput.fill('Anna')
     await phoneInput.click()
     await phoneInput.type('9991234567')
     await expect(phoneInput).toHaveValue('+7 (999) 123-45-67')
-    await petTypeInput.fill('Кошка')
-    await reasonInput.fill('Питомец чешет ухо уже несколько дней')
+    await petTypeInput.fill('Cat')
+    await reasonInput.fill('Pet has been scratching its ear for several days.')
 
     await noCallCheckbox.check()
     await policyCheckbox.check()

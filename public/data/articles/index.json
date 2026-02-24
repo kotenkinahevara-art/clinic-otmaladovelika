@@ -1,0 +1,266 @@
+[
+  {
+    "id": "cat-operation",
+    "title": "Как подготовиться к стерилизации или кастрации?",
+    "image": "/images/articles-optimized/cat-operation.jpg",
+    "category": "care",
+    "source": {
+      "title": "Royal Canin — Подготовка кошки к стерилизации",
+      "url": "https://royalcanin.ru/cat-article/podgotovka-koshki-k-sterilizacii"
+    },
+    "excerpt": "Стерилизация и кастрация относятся к плановым операциям, и качество подготовки напрямую влияет на безопасность анестезии и скорость восстановления. По открытым ветеринарным рекомендациям, перед вмешательством важно оценить общее состояние питомца и заранее обсудить с врачом хронические заболевания, перенесенные реакции на препараты и особенности поведения животного.",
+    "animal": "cat"
+  },
+  {
+    "id": "dog-snow",
+    "title": "Собаки и снег. В чем опасность?",
+    "image": "/images/articles-optimized/dog-snow.jpg",
+    "category": "season",
+    "source": {
+      "title": "Pro Plan — Чем защитить лапы собаки от реагентов",
+      "url": "https://www.proplan.ru/dog/article/reagenty"
+    },
+    "excerpt": "Зимние прогулки полезны, но именно в этот период возрастает нагрузка на кожу лап, суставы и терморегуляцию. По открытым ветеринарным материалам, ключевой фактор риска в городе — реагенты: они сушат кожу, провоцируют раздражение подушечек и микротрещины, а при вылизывании могут вызывать желудочно-кишечные проблемы.",
+    "animal": "dog"
+  },
+  {
+    "id": "cat-inspection",
+    "title": "Кошка боится визитов в ветеринарную клинику: что делать?",
+    "image": "/images/articles-optimized/cat-inspection.jpg",
+    "category": "behavior",
+    "source": {
+      "title": "Приют «Муркоша» — Как снизить стресс у кошки при посещении ветклиники",
+      "url": "https://murkosha.ru/nashi-stati/lechenie-i-profilaktikaobschie-voprosy-lecheniya/obschenie-s-veterinarom/kak-snizit-stress-u-koshki-pri-poseschenii-veterinarnoy-kliniki"
+    },
+    "excerpt": "Для кошки тревога обычно начинается еще дома: переноска, непривычные запахи, дорога и ожидание в новой среде. Открытые материалы по поведенческой медицине подчеркивают, что снижение стресса должно начинаться до поездки — тогда сам осмотр проходит значительно спокойнее.",
+    "animal": "cat"
+  },
+  {
+    "id": "cat-stepan",
+    "title": "Кот Степан и редкая аномалия урахуса",
+    "image": "/images/articles-optimized/cat-stepan.jpg",
+    "category": "cases",
+    "source": {
+      "title": "История случая во ВКонтакте",
+      "url": "https://vk.com/otmaladovelikavet?w=wall-231714195_23"
+    },
+    "excerpt": "Недавно к нам обратились с 6-месячным котом Степаном. Владельцы жаловались на затрудненное мочеиспускание, ранее питомец уже проходил обследование в другой клинике.",
+    "animal": "cat"
+  },
+  {
+    "id": "care-vaccination-calendar",
+    "title": "График вакцинации: что важно не пропустить",
+    "image": "/images/articles-optimized/close-up-veterinarian-taking-care-pet.jpg",
+    "category": "care",
+    "source": {
+      "title": "Royal Canin",
+      "url": "https://royalcanin.ru/"
+    },
+    "excerpt": "График вакцинации: что важно не пропустить — тема, в которой важна последовательность и регулярность действий со стороны владельца.",
+    "animal": "all"
+  },
+  {
+    "id": "care-parasite-protection",
+    "title": "Защита от паразитов круглый год: практический минимум",
+    "image": "/images/articles-optimized/veterinarian-blue-latex-gloves-checking-ear-sick-dog-veterinary-clinic.jpg",
+    "category": "care",
+    "source": {
+      "title": "Pro Plan",
+      "url": "https://www.proplan.ru/"
+    },
+    "excerpt": "Защита от паразитов круглый год: практический минимум — тема, в которой важна последовательность и регулярность действий со стороны владельца.",
+    "animal": "all"
+  },
+  {
+    "id": "care-dental-health",
+    "title": "Здоровье зубов у питомца: уход, который часто откладывают",
+    "image": "/images/articles-optimized/close-up-cute-dog-with-tongue-out.jpg",
+    "category": "care",
+    "source": {
+      "title": "Petstory",
+      "url": "https://petstory.ru/"
+    },
+    "excerpt": "Здоровье зубов у питомца: уход, который часто откладывают — тема, в которой важна последовательность и регулярность действий со стороны владельца.",
+    "animal": "all"
+  },
+  {
+    "id": "care-neutering-prep",
+    "title": "Кот хромает – какие могут быть причины?",
+    "image": "/images/articles-optimized/veterinarian-taking-care-pet.jpg",
+    "category": "care",
+    "source": {
+      "title": "Белкина Анна Александровна",
+      "url": "https://junglevet.ru/specialisty/belkina-anna-aleksandrovna/"
+    },
+    "excerpt": "Кот хромает – какие могут быть причины? — тема, в которой важна последовательность и регулярность действий со стороны владельца.",
+    "animal": "all"
+  },
+  {
+    "id": "care-weight-control",
+    "title": "Контроль веса у кошек и собак: как не упустить начало проблемы",
+    "image": "/images/articles-optimized/pet-cat-lifestyle-portraits.jpg",
+    "category": "care",
+    "source": {
+      "title": "Pro Plan",
+      "url": "https://www.proplan.ru/"
+    },
+    "excerpt": "Контроль веса у кошек и собак: как не упустить начало проблемы — тема, в которой важна последовательность и регулярность действий со стороны владельца.",
+    "animal": "all"
+  },
+  {
+    "id": "care-senior-pets-checkup",
+    "title": "Пожилые питомцы: какие обследования делать регулярно",
+    "image": "/images/articles-optimized/closeup-shot-old-dog-resting-tiled-surface.jpg",
+    "category": "care",
+    "source": {
+      "title": "Vet Union",
+      "url": "https://vetunion.ru/"
+    },
+    "excerpt": "Пожилые питомцы: какие обследования делать регулярно — тема, в которой важна последовательность и регулярность действий со стороны владельца.",
+    "animal": "all"
+  },
+  {
+    "id": "behavior-cat-stress-clinic",
+    "title": "Кошка боится клиники: как снизить тревогу до визита",
+    "image": "/images/articles-optimized/beautiful-cat-home.jpg",
+    "category": "behavior",
+    "source": {
+      "title": "Муркоша",
+      "url": "https://murkosha.ru/"
+    },
+    "excerpt": "Кошка боится клиники: как снизить тревогу до визита — это не про «плохой характер», а про сигналы, которые подает животное в ответ на стресс, дискомфорт или изменения среды.",
+    "animal": "cat"
+  },
+  {
+    "id": "behavior-toilet-problems",
+    "title": "Проблемы с лотком: медицинская или поведенческая причина",
+    "image": "/images/articles-optimized/cute-bicolor-cat-resting-small-blue-box.jpg",
+    "category": "behavior",
+    "source": {
+      "title": "Petstory",
+      "url": "https://petstory.ru/"
+    },
+    "excerpt": "Проблемы с лотком: медицинская или поведенческая причина — это не про «плохой характер», а про сигналы, которые подает животное в ответ на стресс, дискомфорт или изменения среды.",
+    "animal": "cat"
+  },
+  {
+    "id": "behavior-separation-anxiety-dogs",
+    "title": "Тревога разлуки у собак: как корректировать поведение",
+    "image": "/images/articles-optimized/full-shot-dog-biting-shoe-home.jpg",
+    "category": "behavior",
+    "source": {
+      "title": "Pro Plan",
+      "url": "https://www.proplan.ru/"
+    },
+    "excerpt": "Тревога разлуки у собак: как корректировать поведение — это не про «плохой характер», а про сигналы, которые подает животное в ответ на стресс, дискомфорт или изменения среды.",
+    "animal": "dog"
+  },
+  {
+    "id": "behavior-scratch-furniture",
+    "title": "Кошка точит когти о мебель: как перенаправить поведение",
+    "image": "/images/articles-optimized/cute-scottish-straight-gray-cat-hunting-playing.jpg",
+    "category": "behavior",
+    "source": {
+      "title": "Royal Canin",
+      "url": "https://royalcanin.ru/"
+    },
+    "excerpt": "Кошка точит когти о мебель: как перенаправить поведение — это не про «плохой характер», а про сигналы, которые подает животное в ответ на стресс, дискомфорт или изменения среды.",
+    "animal": "cat"
+  },
+  {
+    "id": "behavior-adaptation-new-pet",
+    "title": "Адаптация нового питомца в доме: как пройти стартовый период",
+    "image": "/images/articles-optimized/cat-being-messy-naughty.jpg",
+    "category": "behavior",
+    "source": {
+      "title": "Petstory",
+      "url": "https://petstory.ru/"
+    },
+    "excerpt": "Адаптация нового питомца в доме: как пройти стартовый период — это не про «плохой характер», а про сигналы, которые подает животное в ответ на стресс, дискомфорт или изменения среды.",
+    "animal": "all"
+  },
+  {
+    "id": "behavior-dog-aggression-triggers",
+    "title": "Агрессия у собак: триггеры, которые важно распознать",
+    "image": "/images/articles-optimized/adorable-husky-dog-with-muzzle-outdoors.jpg",
+    "category": "behavior",
+    "source": {
+      "title": "Vet Union",
+      "url": "https://vetunion.ru/"
+    },
+    "excerpt": "Агрессия у собак: триггеры, которые важно распознать — это не про «плохой характер», а про сигналы, которые подает животное в ответ на стресс, дискомфорт или изменения среды.",
+    "animal": "dog"
+  },
+  {
+    "id": "season-ticks-protection",
+    "title": "Сезон клещей: как защитить питомца в городе и за городом",
+    "image": "/images/articles-optimized/pomeranian-with-yellow-fur-lying-grass-it-s-back.jpg",
+    "category": "season",
+    "source": {
+      "title": "Pro Plan",
+      "url": "https://www.proplan.ru/"
+    },
+    "excerpt": "Сезон клещей: как защитить питомца в городе и за городом особенно актуальна в периоды погодных и средовых изменений, когда нагрузка на организм питомца возрастает.",
+    "animal": "all"
+  },
+  {
+    "id": "season-heatstroke-risks",
+    "title": "Жара и перегрев: когда прогулка становится опасной",
+    "image": "/images/articles-optimized/is-the-dog-hot.jpg",
+    "category": "season",
+    "source": {
+      "title": "Petstory",
+      "url": "https://petstory.ru/"
+    },
+    "excerpt": "Жара и перегрев: когда прогулка становится опасной особенно актуальна в периоды погодных и средовых изменений, когда нагрузка на организм питомца возрастает.",
+    "animal": "all"
+  },
+  {
+    "id": "season-fireworks-stress",
+    "title": "Петарды и салюты: как подготовить питомца к шумным праздникам",
+    "image": "/images/articles-optimized/new-year-dog.jpg",
+    "category": "season",
+    "source": {
+      "title": "Royal Canin",
+      "url": "https://royalcanin.ru/"
+    },
+    "excerpt": "Петарды и салюты: как подготовить питомца к шумным праздникам особенно актуальна в периоды погодных и средовых изменений, когда нагрузка на организм питомца возрастает.",
+    "animal": "all"
+  },
+  {
+    "id": "season-allergy-bloom",
+    "title": "Сезонная аллергия: как отличить от кожной инфекции",
+    "image": "/images/articles-optimized/dog-allergy.jpg",
+    "category": "season",
+    "source": {
+      "title": "Vet Union",
+      "url": "https://vetunion.ru/"
+    },
+    "excerpt": "Сезонная аллергия: как отличить от кожной инфекции особенно актуальна в периоды погодных и средовых изменений, когда нагрузка на организм питомца возрастает.",
+    "animal": "all"
+  },
+  {
+    "id": "season-winter-paws-care",
+    "title": "Зимний уход за лапами: реагенты, трещины, воспаление",
+    "image": "/images/articles-optimized/winter-paw-care.jpg",
+    "category": "season",
+    "source": {
+      "title": "Pro Plan",
+      "url": "https://www.proplan.ru/"
+    },
+    "excerpt": "Зимний уход за лапами: реагенты, трещины, воспаление особенно актуальна в периоды погодных и средовых изменений, когда нагрузка на организм питомца возрастает.",
+    "animal": "all"
+  },
+  {
+    "id": "season-summer-travel",
+    "title": "Поездки летом: аптечка и чек-лист перед дорогой с питомцем",
+    "image": "/images/articles-optimized/summer-dog.jpg",
+    "category": "season",
+    "source": {
+      "title": "Petstory",
+      "url": "https://petstory.ru/"
+    },
+    "excerpt": "Поездки летом: аптечка и чек-лист перед дорогой с питомцем особенно актуальна в периоды погодных и средовых изменений, когда нагрузка на организм питомца возрастает.",
+    "animal": "all"
+  }
+]

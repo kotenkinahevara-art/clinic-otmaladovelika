@@ -94,10 +94,6 @@
 
 .btn--xl {
   padding: f.fluid(16, 14);
-
-  @include media.mobile {
-    margin-top: f.fluid(10, 25);
-  }
 }
 
 @include media.mobile {
@@ -122,6 +118,17 @@
   100% {
     transform: scale(1);
   }
+}
+
+//кнопки about
+
+.about-buttons {
+  display: grid;
+  gap: f.rem(12);
+}
+
+.about-buttons .btn--xl {
+  width: 100%;
 }
 
 

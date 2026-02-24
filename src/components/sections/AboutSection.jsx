@@ -4,10 +4,14 @@ import Container from '../ui/Container.jsx'
 import PrimaryButton from '../ui/PrimaryButton.jsx'
 import { itemReveal, listStagger, sectionReveal } from '../ui/motionPresets.js'
 import scrollToSection from '../../utils/scrollToSection.js'
+import { Link } from 'react-router-dom'
 
 function AboutSection() {
   const goToContacts = () => {
     scrollToSection('contacts')
+  }
+  const goToReception = () => {
+    scrollToSection('reception')
   }
 
   return (
@@ -31,6 +35,10 @@ function AboutSection() {
                 мы создаём спокойную и безопасную атмосферу, в которой животные чувствуют заботу, внимание и доверие, а владельцы —
                 уверенность и спокойствие за своих любимцев.
               </p>
+              <p>
+                Хотите узнать больше о клинике?{' '}
+                <Link to="/vetklinika-v-dalnem-konstantinove">ветклиника в Дальнем Константинове</Link>.
+              </p>
             </div>
           </Motion.div>
 
@@ -51,9 +59,13 @@ function AboutSection() {
               />
             </Motion.div>
 
-            <Motion.div variants={itemReveal}>
+            <Motion.div variants={itemReveal} className="about-buttons">
               <PrimaryButton size="xl" variant="cta" onClick={goToContacts}>
                 Подробнее
+              </PrimaryButton>
+
+              <PrimaryButton size="xl" variant="cta" onClick={goToReception}>
+                Записаться на приём
               </PrimaryButton>
             </Motion.div>
           </Motion.div>

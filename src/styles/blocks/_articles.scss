@@ -6,7 +6,13 @@
   gap: f.rem(12);
 }
 
+.articles__grid--home {
+  position: relative;
+  z-index: 1;
+}
+
 .card.article-card {
+  height: 100%;
   overflow: hidden;
   gap: 0;
 }
@@ -17,8 +23,7 @@
 
 .article-card__image {
   width: calc(100% + (2 * var(--space-fluid-35-25)));
-  max-width: none;
-  aspect-ratio: 4 / 3;
+  block-size: clamp(12rem, 24vw, 16rem);
   object-fit: cover;
   display: block;
   margin-inline: calc(-1 * var(--space-fluid-35-25));
@@ -28,11 +33,14 @@
 }
 
 .article-card--skeleton .article-card__image {
+  block-size: clamp(12rem, 24vw, 16rem);
   margin-top: calc(-1 * #{f.fluid(35, 45)});
 }
 
 .article-card__body {
-  display: grid;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   gap: f.rem(12);
   padding-top: f.fluid(30, 20);
 }
@@ -51,6 +59,7 @@
   align-items: center;
   gap: f.rem(8);
   width: fit-content;
+  margin-top: auto;
   border: 0;
   background: transparent;
   color: inherit;
@@ -72,7 +81,48 @@
 .articles__actions {
   margin-top: var(--space-fluid-24-18);
   display: flex;
+  gap: f.rem(12);
   justify-content: center;
+}
+
+.articles__meta {
+  margin-bottom: var(--space-14);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: f.rem(12);
+}
+
+.articles__summary {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: var(--font-size-ui);
+}
+
+.articles__reset {
+  border: 0;
+  background: transparent;
+  color: var(--color-violet);
+  font-family: var(--font-family-accent);
+  font-size: var(--font-size-ui);
+  cursor: pointer;
+}
+
+.articles__tags {
+  margin-bottom: var(--space-14);
+  display: flex;
+  flex-wrap: wrap;
+  gap: f.rem(8);
+}
+
+.articles__tag {
+  display: inline-flex;
+  align-items: center;
+  padding: f.rem(8) f.rem(12);
+  border-radius: var(--radius-pill);
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  font-size: var(--font-size-ui);
 }
 
 .articles__state {
@@ -91,7 +141,9 @@
   }
 }
 
-
-
-
-
+@include media.mobile {
+  .articles__meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
