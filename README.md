@@ -18,7 +18,14 @@ https://www.vetotmaladovelika.ru/
 
 ## Стек
 
-`React`, `React Router`, `Vite`, `SCSS`, `Framer Motion`, `ESLint`, `Playwright`, `GitHub Actions`.
+- React — компонентный подход
+- React Router — навигация между страницами
+- Vite — быстрая сборка проекта
+- SCSS — структурированные стили
+- Framer Motion — анимации интерфейса
+- ESLint — контроль качества кода
+- Playwright — базовое e2e-тестирование
+- GitHub Actions — автоматические проверки
 
 ## Запуск
 
